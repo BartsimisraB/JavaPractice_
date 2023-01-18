@@ -1,0 +1,29 @@
+package Day_10_Java;
+
+
+class People{
+	String name;
+	String id;
+	
+	 People(String name){
+		this.name = name;
+	}
+}
+class Student extends People{
+	
+	Student(String name){
+		super(name);
+	}
+	
+}
+
+public class Day10_Java2_UpCasting2 {	
+	
+	public static void main(String[] args) {
+		
+		People p = new Student("±æµ¿");	//upcasting
+		Student s = (Student)p; //downcasting
+		
+		System.out.println(s.name);
+	}
+}

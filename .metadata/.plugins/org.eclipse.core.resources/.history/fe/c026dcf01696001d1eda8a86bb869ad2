@@ -1,0 +1,23 @@
+<%@page import="bean.BoardBean"%>
+<%@page import="bean.BoardDAO"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<center>
+	<h2>게시글 수정</h2>
+<%
+	int num = Integer.parseInt(request.getParameter("num"));
+	BoardDAO bdao = new BoardDAO();
+	BoardBean bean = bdao.oneupdateBoard(num);
+	
+%>
+
+</center>
+</body>
+</html>

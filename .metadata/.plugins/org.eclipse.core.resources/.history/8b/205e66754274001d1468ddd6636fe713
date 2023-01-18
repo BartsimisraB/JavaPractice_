@@ -1,0 +1,29 @@
+package Day_10_Java;
+class Circles{
+	int r;
+	
+	Circles(int r){
+		this.r = r;
+	}
+	double getarea() {
+		return r * r * 3.14;
+	}
+	
+}
+
+
+
+public class Day10_Java2_Reperance2 {	//ppt 객체배열
+	
+	public static void main(String[] args) {
+		
+		Circles [] arr = new Circles[4];	// int arr[] = new int arr[4];
+		//객체 배열 : 여러개의 객체를 배열형태로 묶어줌
+		
+		
+		for(int i = 0; i < arr.length; i++) {
+			arr[i] = new Circles(i);
+			System.out.println(arr[i].getarea());
+		}
+	}
+}

@@ -1,0 +1,27 @@
+package Day_10_Java;
+class People{
+	String name;
+	String id;
+	
+	Person(String name){
+		this.name = name;
+	}
+}
+class Student extends People{
+	super(name);
+	
+	Student(String name){
+		
+	}
+	
+}
+
+
+public class Day10_Java2_UpCasting1 {	//ppt 객체배열
+	
+	public static void main(String[] args) {
+		
+		People p = new Student("길동");
+		
+	}
+}

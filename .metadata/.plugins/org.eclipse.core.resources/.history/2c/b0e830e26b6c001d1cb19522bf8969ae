@@ -1,0 +1,29 @@
+package Day4_Java;
+
+import java.util.Scanner;
+
+public class Day4_Java_Exercise1 {
+	public static void main(String[] args) {
+
+//	2. 시간과 물건 개수로 금액 할인해주는 프로그램
+//	(총 금액은 10만원으로 설정, 시간과물건 개수는 입력받기)
+//
+//	14시에 마트를 방문하고 물건 개수가 3개 이하이면 5%로 할인
+//
+//	18시에 마트를 방문하고 물건 개수가 5개 이하이면 10%로 할인
+//
+//	20시에 마트를 방문하고 물건 개수가 10개 이하이면 20%로 할인
+	
+		Scanner sc = new Scanner(System.in);
+		int total = 100000;
+		System.out.println("시간 입력");
+		int time = sc.nextInt();
+		System.out.println("개수 입력");
+		int many = sc.nextInt();
+		
+		if(time ==14 && many <=3) {
+			System.out.printf("%d원 에서 5% 할인 되셨습니다.",total);
+			System.out.printf("총 금액은 %.0f원 입니다.",total*(0.05));
+		}
+	}
+}

@@ -1,0 +1,31 @@
+package Day9_Java;
+
+class AAA {
+
+	void ride() {
+		System.out.println("오버라이딩 AAA");
+	}
+
+	void load() {
+		System.out.println("오버로딩 AAA");
+	}
+
+}
+
+class BBB extends AAA {
+
+}
+
+public class Excercise912 {
+	public static void main(String[] args) {
+
+		AAA a = new AAA();
+		a.ride();
+		a.load();
+
+		BBB b = new BBB();
+		b.ride();
+//		b.load(10);
+
+	}
+}

@@ -1,0 +1,16 @@
+package Day9_Java;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+
+public class A2 {
+
+	public static void main(String[] args) throws Exception {
+		
+		BufferedWriter bw = new BufferedWriter(new FileWriter("test01.txt"));
+		
+		bw.write("Hi\n저는 자바를 좋아하고 잘합니다.\n앞으로 더 열심히 공부할 것입니다.");
+		
+		
+	}
+}

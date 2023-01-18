@@ -1,0 +1,13 @@
+package co.sjw.movie;
+
+public class MemberBean {
+String id;
+String pw;
+String pwch;
+String email;
+String phone;
+String favorite;
+String job;
+String age;
+String comment;
+}

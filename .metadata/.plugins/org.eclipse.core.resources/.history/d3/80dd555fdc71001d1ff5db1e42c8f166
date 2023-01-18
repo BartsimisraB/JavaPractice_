@@ -1,0 +1,21 @@
+package Day9_Java;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Day9_Java1 {
+
+	public static void main(String[] args) throws IOException {
+		
+		FileWriter fw = new FileWriter("Test2.txt");
+	
+		char [ ]a= {'j','a','v','a'};
+		
+		for(char b : a) {
+			fw.write(b);
+		}
+		fw.close();
+	
+	
+	}
+}

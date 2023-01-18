@@ -1,0 +1,37 @@
+package Day_10_Java;
+
+class Elec {
+	String color;
+
+	Elec(String c) {
+		color = c;
+	}
+}
+
+class Note extends Elec {
+	int number;
+
+	Note(String c, int n) {
+		super(c); // this.color = c;
+		number = n;
+	}
+}
+
+class Ipad extends Note {
+	int size;
+
+	Ipad(String c, int n, int s) {
+		super(c, n);
+		size = s;
+	}
+	void show() {
+		System.out.println(color + "색"+ number + "개" + size + "인치");
+	}
+}
+
+public class Day10_Java2_UpCasting3 {
+
+	public static void main(String[] args) {
+
+	}
+}

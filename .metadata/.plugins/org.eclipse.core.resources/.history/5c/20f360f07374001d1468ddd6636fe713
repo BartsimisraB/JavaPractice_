@@ -1,0 +1,22 @@
+package Day_10_Java;
+abstract class Car{
+	 
+	String name; // field
+	
+	void run() {
+		System.out.println("차가 움직인다.");
+	}
+	abstract void stop();
+
+}
+
+public class Day10_Java2_abstract {
+	
+	public static void main(String[] args) {
+
+		
+		Number n = new Number();
+		n.show(3.14);
+		Number.show(20); //static 메소드는 객체 생성없이 클래스로 호출 가능
+	}
+}

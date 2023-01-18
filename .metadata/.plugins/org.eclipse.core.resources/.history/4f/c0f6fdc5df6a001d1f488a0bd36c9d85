@@ -1,0 +1,14 @@
+package Second_Day;
+
+public class Second_Day_Java4 {
+
+	public static void main(String[] args) {
+
+		// 조건 연산자 int s = (x>y) ? 1 : -1 ; 참이면 1 거짓이면 -1
+
+		int a = 3, b = 5;
+		System.out.println((a > b) ? (a + b) : (a - b));
+
+	}
+
+}

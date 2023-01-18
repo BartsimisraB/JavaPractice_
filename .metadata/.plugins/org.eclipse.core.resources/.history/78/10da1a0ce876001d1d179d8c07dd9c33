@@ -1,0 +1,40 @@
+package Book;
+
+public class Page_4_507 {
+
+	private String userID;
+	
+	public String getUserID() {
+		return userID;
+	}
+
+	public void setUserID(String ID) throws Exception {
+		if(userID == null) {
+			throw new Page_4_506("아이디는 null 일 수 없습니다.");
+		}
+		else if (userID.length() < 8 || userID.length() > 20) {
+			throw new Page_4_506("아이디는 8자 이상 20자 이하로 쓰세요.");
+		}
+		this.userID = userID;
+	}
+	public static void main(String[] args) {
+		Page_4_507 test = new Page_4_507();
+		
+		String userID = null;
+		try {
+			test.setUserID(userID);
+			
+		} catch(Exception e) {
+			System.out.println(e.getMessage());
+		}
+		
+		userID = "1234567";
+		try {
+			test.setUserID(userID);
+			
+		}catch (Exception e) {
+			System.out.println();
+		}
+		
+	}
+}

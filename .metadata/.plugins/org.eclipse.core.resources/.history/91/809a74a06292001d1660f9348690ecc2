@@ -1,0 +1,65 @@
+function checkform() {
+	var fr = document.getElementsByTagName("form");
+	var name = document.getElementsByName("name");
+	var pernum1 = document.getElementsByName("pernum2");
+	var id = document.getElementsByName("id");
+	var pw = document.getElementsByName("pw");
+	var pwch = document.getElementsByName("pwcheck");
+	var email1 = document.getElementsByName("email1");
+	var email2 = document.getElementsByName("email2");
+	var addrnum = document.getElementsByName("addrnum");
+	var addr1 = document.getElementsByName("addr1");
+	var addr2 = document.getElementsByName("addr2");
+	var phone = document.getElementsByName("phone");
+	
+	
+	
+	if ((document.form.name.value == null || document.form.name.length == 0)
+		&& (document.form.pernum.value == null || document.form.pernum.length == 0)
+		&& (document.form.id.value == null || document.form.id.length == 0)
+		&& (document.form.pw.value == null || document.form.pw.length == 0)
+		&& (document.form.pwcheck.value == null || document.form.pwcheck.length == 0)) {
+			
+		alert("*로 표시된 곳은 필수로 입력해야 합니다.");
+	}
+
+	if (document.fr.id.length < 4) {
+		alert("아이디는 4글자 이상 입력해 주세요");
+	}
+	if (!document.fr.pw.value.equals(document.fr.pwcheck.value)) {
+		alert("비밀번호가 일치하지 않습니다.");
+	}
+	if (document.fr.addrnum.value.indexOf('-') == -1) {
+		alert("우편번호는 - 를 포함해 작성해 주세요");
+	}
+	if (document.fr.phone.value.indexOf('-') == -1) {
+		alert("전화번호는 - 를 포함해 작성해 주세요");
+	}
+	if ((document.fr.name.value != null || document.fr.name.innerText.length != 0)
+		&& (document.fr.pernum.value != null || document.fr.pernum.innerText.length != 0)
+		&& (document.fr.id.value != null || document.fr.id.innerText.length != 0)
+		&& (document.fr.pw.value != null || document.fr.pw.innerText.length != 0)
+		&& (document.fr.pwcheck.value != null || document.fr.pwcheck.innerText.length != 0)
+		&& (document.fr.email1.value != null || document.fr.email1.innerText.length != 0)
+		&& (document.fr.email2.value != null || document.fr.email2.innerText.length != 0)
+		&& (document.fr.addrnum.value != null || document.fr.addrnum.innerText.length != 0)
+		&& (document.fr.addr1.value != null || document.fr.addr1.innerText.length != 0)
+		&& (document.fr.addr2.value != null || document.fr.addr2.innerText.length != 0)
+		&& (document.fr.phone.value != null || document.fr.phone.length != 0)) {
+
+		document.fr.submit();
+	}
+}
+
+function checkemail() {
+	if (document.fr.selectEmail.value == '1') {
+		document.fr.email2.readOnly = false;
+		document.fr.email2.value = '';
+		document.fr.email2.focus();
+	}
+	else {
+		document.fr.email2.readOnly = true;
+		document.fr.email2.value = document.fr.selectEmail.value;
+	}
+}
+

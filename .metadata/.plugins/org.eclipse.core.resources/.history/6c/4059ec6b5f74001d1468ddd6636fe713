@@ -1,0 +1,22 @@
+package Day_10_Java;
+
+class Number{
+	int n;
+	static void show(int n) {
+		System.out.println(n);
+	}
+	void show(double n) {
+		System.out.println(n);
+	}
+}
+
+public class Day10_Java2_UpCasting4_instanceof2 {
+	
+	public static void main(String[] args) {
+
+		
+		Number n = new Number();
+		n.show(3.14);
+		
+	}
+}

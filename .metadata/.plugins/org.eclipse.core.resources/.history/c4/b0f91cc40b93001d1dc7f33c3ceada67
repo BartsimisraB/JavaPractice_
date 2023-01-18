@@ -1,0 +1,9 @@
+package bean;
+//DAO : Data Access Object
+public class MemberDAO {
+
+	MemberDAO(){
+		
+		
+	}
+}

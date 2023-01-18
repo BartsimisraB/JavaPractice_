@@ -1,0 +1,28 @@
+package Day9_Java;
+
+class Car {
+	public int gas; // ÇÊµå
+
+	public void up() {
+		gas += 1;
+		System.out.println(gas);
+	}
+
+	public final void stop() {
+		System.out.println("stop");
+		gas = 0;
+	}
+
+}
+
+public class Excercise913 {
+
+	public static void main(String[] args) {
+
+		Car c = new Car();
+		c.gas = 0;
+		c.up();
+		c.stop();
+
+	}
+}

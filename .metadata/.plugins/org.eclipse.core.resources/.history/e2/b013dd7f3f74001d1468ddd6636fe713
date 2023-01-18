@@ -1,0 +1,35 @@
+package Day_10_Java;
+
+class Circle {
+
+	private int r; // 필드 (인스턴스 변수)
+
+	public Circle(int r) { // 생성자
+		this.r = r;
+	}
+
+	int get() { // 메소드
+		return r;
+	}
+}
+
+class NCircle extends Circle {
+
+	String color; // 자식 클래스에서 추가된 필드
+
+	NCircle(int r, String c) {
+		super(r); // super 는 반드시 첫 줄에 호출, 부모 생성자 호출 (r을 호출하는 것이 아님)
+		color = c;
+	}
+
+	void show() {
+		System.out.println("반지름" + super.get() + color + " 색");
+	}
+
+}
+
+public class Day10_Java1 {
+	public static void main(String[] args) {
+
+	}
+}

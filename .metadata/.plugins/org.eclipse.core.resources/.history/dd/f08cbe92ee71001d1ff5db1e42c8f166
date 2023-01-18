@@ -1,0 +1,34 @@
+package Day9_Java;
+class Student{
+	
+	
+	
+	
+	
+	
+
+	
+}
+public class Excercise6 {
+
+	public static void main(String[] args) {
+		
+		
+		Student s = new Student("Çö¼®",29);
+		
+		Student s2 = new Student("ÇÑÈñ");
+		
+		Student s3 = new Student();
+		
+		s.pr();
+		s2.pr();
+		s3.pr();
+		
+		
+		
+		
+		
+		
+		
+	}
+}

@@ -1,0 +1,11 @@
+package Array_208;
+
+public class EnhancedForLoop {
+	public static void main(String[] args) {
+		String [] strArray = {"Java", "Android", "C", "JavaScript", "Python"};
+		
+		for (int i = 0; i < strArray.length; i++) {
+			
+		}
+	}
+}

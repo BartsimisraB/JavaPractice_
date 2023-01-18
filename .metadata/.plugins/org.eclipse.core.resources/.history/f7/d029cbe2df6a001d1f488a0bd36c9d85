@@ -1,0 +1,25 @@
+package Second_Day;
+
+import java.util.Scanner;
+
+public class Second_Day_Java4 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("이름을 입력해 주세요 : ");
+		short shortA = sc.nextShort();
+		int intA = sc.nextInt();
+		float floatA = sc.nextFloat();
+		double doubleA = sc.nextDouble();
+		String strA = sc.next();
+		
+		System.out.println("제 이름은 "+strA+"입니다.");
+//		// 조건 연산자 int s = (x>y) ? 1 : -1 ; 참이면 1 거짓이면 -1
+//
+//		int a = 3, b = 5;
+//		System.out.println((a > b) ? (a + b) : (a - b));
+
+	}
+
+}

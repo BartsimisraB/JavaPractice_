@@ -1,0 +1,36 @@
+package Day_10_Java;
+
+class Circle1 {
+	private double r;
+
+	Circle1(double r) {
+		this.r = r;
+	}
+
+	double get() {
+		return r;
+	}
+}
+
+class Cir extends Circle1 {
+	double r;
+	String a;
+
+	Cir(double r, String b) {
+		super(r);
+		this.a = b;
+	}
+
+	void pr() {
+		System.out.println(r + " " + a);
+	}
+
+}
+
+public class Main6 {
+	public static void main(String[] args) throws Exception {
+
+		Cir c = new Cir(2.5, "circle");
+		c.pr(); // 2.5ÀÎ circle Ãâ·Â
+	}
+}

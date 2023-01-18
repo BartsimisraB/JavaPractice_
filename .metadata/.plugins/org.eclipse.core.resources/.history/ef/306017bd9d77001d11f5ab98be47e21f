@@ -1,0 +1,43 @@
+package Day14_Java;
+
+public class B4 {
+	public static void main(String[] args) {
+//		1~100¾ÈÀÇ Á¤¼ö¸¦ÀÔ·Â¹Þ¾Æ 3,6,9 Áß ÇÏ³ª°¡ ÀÖ´Â °æ¿ì ¡°Â¦¡±, µÎ °³ ÀÖ´Â °æ¿ì ¡°Â¦Â¦¡±,
+//		ÇÏ³ªµµ ¾øÀ¸¸é ¡°¶¯¡±À»Ãâ·ÂÇØ¶ó. 
+//		(Á¤¼ö°ªÀÌ 39¶ó°í ÇÒ ¶§, n/10=3, n%10=9 ÀÌ ³ª¿Â´Ù. (/, % ¿¬»êÀÚ È°¿ë))
+//		½ÇÇà °á°ú) ÀÔ·Â:39 
+//		Â¦Â¦
+
+		int a = (int)(Math.random()*99)+1;
+		System.out.println("ÀÔ·Â : " + a);
+		int ten = a / 10;
+		int ten_mod = a % 10;
+		if (a < 10) {
+			System.out.println(a % 3 == 0 ? "Â¦" : "¶¯");
+		}
+		else {
+			System.out.println(ten % 3 == 0 && ten_mod % 3 == 0 ? "Â¦Â¦" : "¶¯");
+			 if(ten % 3 == 0 ^ ten_mod % 3 == 0) {
+				System.out.println("Â¦");
+			}
+			
+		}
+//		if (a > 10) {
+//			if (((a / 10) == 3 ^ (a / 10) == 6 ^ (a / 10) == 9) && ((a % 10) == 3 ^ (a % 10) == 6 ^ (a % 10) == 9)) {
+//				System.out.println("Â¦Â¦");
+//			}
+//			else if(((a / 10) == 3 ^ (a / 10) == 6 ^ (a / 10) == 9) ^ ((a % 10) == 3 ^ (a % 10) == 6 ^ (a % 10) == 9)) {
+//				System.out.println("Â¦");
+//			}
+//			else if (a  != 3 ^ a != 6 ^ a != 9) {
+//				System.out.println("¶¯");
+//			}
+//		} else {
+//			if (a == 3 ^ a == 6 ^ a == 9) {
+//				System.out.println("Â¦");
+//			} else if (a  != 3 ^ a != 6 ^ a != 9) {
+//				System.out.println("¶¯");
+//			}
+//		}
+	}
+}

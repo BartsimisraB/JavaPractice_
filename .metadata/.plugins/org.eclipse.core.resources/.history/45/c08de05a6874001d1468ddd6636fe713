@@ -1,0 +1,15 @@
+package Day_10_Java;
+
+
+public class Main5 {
+	public static void main(String[] args) throws Exception {
+
+		for(int i =0; i<4; i++) {
+			
+			for(int j = 0; j<7;j++) {
+				System.out.print(j);
+			}
+		System.out.println();
+		}
+	}
+}

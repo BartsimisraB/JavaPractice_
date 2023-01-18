@@ -1,0 +1,11 @@
+package Day9_Java;
+
+public class A6 {
+
+	public static void main(String[] args) {
+		Song s1 = new Song("On");
+		Song s2 = new Song("00:00");
+		System.outprintln("좋아하는 노래" + s1.getsong());
+		System.outprintln("내 노래" + s2.getsong());
+	}
+}

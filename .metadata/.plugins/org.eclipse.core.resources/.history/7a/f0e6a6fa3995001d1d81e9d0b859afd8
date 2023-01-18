@@ -1,0 +1,20 @@
+<%@page import="bean.MemberBean"%>
+<%@page import="bean.MemberDAO"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<%	//DB에서 한 회원의 정보를 가져옴
+		request.setCharacterEncoding("utf-8");
+		String id = request.getParameter("id");
+		MemberDAO mdao = new MemberDAO();
+		MemberBean mbean = mdao.oneMember(id);	//해당하는 회원아이디의 모든 정보를 리턴받음
+	
+	%>
+</body>
+</html>

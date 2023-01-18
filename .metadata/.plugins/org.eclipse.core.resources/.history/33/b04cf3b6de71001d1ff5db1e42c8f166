@@ -1,0 +1,20 @@
+package Day9_Java;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+public class Day9_Java2 {
+
+	public static void main(String[] args) throws Exception {
+
+		FileReader fr = new FileReader("Java.txt");
+		BufferedReader br = new BufferedReader(fr);
+
+		String r;
+		while ((r = br.readLine()) != null) {
+			System.out.print(r);
+		}
+		fr.close();
+		br.close();
+	}
+}

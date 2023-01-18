@@ -1,0 +1,69 @@
+package co.sjw.movie;
+
+public class MemberBean {
+String id;
+String pass1;
+String pass2;
+String email;
+String tel;
+String hobby;
+String job;
+String age;
+String info;
+
+public String getId() {
+	return id;
+}
+public void setId(String id) {
+	this.id = id;
+}
+public String getPw() {
+	return pass1;
+}
+public void setPw(String pw) {
+	this.pass1 = pw;
+}
+public String getPwch() {
+	return pass2;
+}
+public void setPwch(String pwch) {
+	this.pass2 = pwch;
+}
+public String getEmail() {
+	return email;
+}
+public void setEmail(String email) {
+	this.email = email;
+}
+public String getPhone() {
+	return tel;
+}
+public void setPhone(String phone) {
+	this.tel = phone;
+}
+public String getFavorite() {
+	return hobby;
+}
+public void setFavorite(String favorite) {
+	this.hobby = favorite;
+}
+public String getJob() {
+	return job;
+}
+public void setJob(String job) {
+	this.job = job;
+}
+public String getAge() {
+	return age;
+}
+public void setAge(String age) {
+	this.age = age;
+}
+public String getComment() {
+	return info;
+}
+public void setComment(String comment) {
+	this.info = comment;
+}
+
+}

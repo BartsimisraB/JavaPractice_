@@ -1,0 +1,32 @@
+package Second_Day;
+
+import java.util.Scanner;
+
+public class Second_Day_Java4 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		
+//		System.out.println("이름을 입력해 주세요 : ");
+//		String strA = sc.next(); // .은 접근 연산자
+//		System.out.println("제 이름은 " + strA + "입니다.");
+//		System.out.println();
+//		
+//		System.out.println("나이를 입력해 주세요");
+//		int age = sc.nextInt();
+//		System.out.println("제 나이는 " + age + "살 입니다.");
+//		System.out.printf("제 나이는 %d살 입니다.",age);
+//		System.out.println();
+//		
+//		System.out.println("키를 입력해 주세요");
+//		double height =sc.nextDouble();
+//		System.out.printf("제 키는 %.1fcm 입니다",height);
+		
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		System.out.println(a+b);
+
+	}
+
+}

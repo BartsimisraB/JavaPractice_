@@ -1,0 +1,33 @@
+package Day_10_Java;
+
+class Person {
+
+}
+
+class Student extends Person {
+
+}
+
+class Entertainer extends Person {
+
+}
+
+class Singer extends Entertainer {
+
+}
+
+public class Day10_Java2_UpCasting4 {
+	
+	static void pr(Person p) {
+		if(p instanceof Person) {
+		System.out.println("»ç¶÷");
+	}
+	}
+	public static void main(String[] args) {
+
+		
+		pr(new Student());	//Person p = new Student();
+		pr(new Entertainer());	//Person p = new Student();
+		pr(new Singer());	//Person p = new Singer();
+	}
+}

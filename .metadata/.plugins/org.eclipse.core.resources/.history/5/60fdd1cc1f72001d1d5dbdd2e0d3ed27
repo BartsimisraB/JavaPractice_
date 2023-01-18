@@ -1,0 +1,26 @@
+package Day9_Java;
+
+import java.util.Scanner;
+
+public class Excercise915 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int cnt=0,sum=0;
+		
+		while(true) {
+			System.out.println("숫자 입력");
+			double a = sc.nextDouble();
+			if(a == -1) {
+			System.out.println("반복을 종료합니다.");
+				break;
+			}
+			cnt++;
+			sum+=a;
+			
+		}
+		System.out.println("평균은 : "+(sum/cnt));
+	}
+}

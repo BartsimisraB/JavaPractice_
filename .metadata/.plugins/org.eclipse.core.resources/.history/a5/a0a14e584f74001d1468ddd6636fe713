@@ -1,0 +1,14 @@
+package Day_10_Java;
+class Elec {
+	String color;
+
+	Elec(String c) {
+		color = c;
+	}
+}
+public class Day10_Java2_UpCasting3 {
+
+	public static void main(String[] args) {
+
+	}
+}

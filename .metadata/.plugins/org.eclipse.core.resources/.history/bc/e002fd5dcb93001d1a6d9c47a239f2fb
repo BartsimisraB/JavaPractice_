@@ -1,0 +1,21 @@
+package gui;
+
+import java.awt.Component;
+
+import javax.swing.JCheckBox;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableCellRenderer;
+
+@SuppressWarnings("serial")
+public class ProductTableCellRenderer extends DefaultTableCellRenderer {
+
+	@Override
+	public Component getTableCellRendererComponent(JTable table, Object value,boolean isSelected, boolean hasFocus, int row, int column) {
+		  Component comp = null;
+		  if(column==6){
+		  comp = new JCheckBox();
+
+		  }
+		  return comp;
+		  }
+​}

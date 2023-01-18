@@ -1,0 +1,11 @@
+package Book;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+public class Page_4_531 {
+	public static void main(String[] args) throws FileNotFoundException {
+		
+		FileInputStream fos = new FileInputStream("output2.txt");
+	}
+}

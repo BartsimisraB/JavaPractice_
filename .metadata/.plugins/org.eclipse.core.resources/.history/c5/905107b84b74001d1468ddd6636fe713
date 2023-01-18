@@ -1,0 +1,27 @@
+package Day_10_Java;
+class Student {
+	
+	String name_kr;
+	String name_eng;
+	Student(String name_kr, String name_eng) {
+		this.name_kr = name_kr;
+		this.name_eng = name_eng;
+	}
+	public void pr() {
+		System.out.println(name_kr+" "+name_eng);
+		
+	}
+}
+
+
+
+public class Main2 {
+	public static void main(String[] args) throws Exception {
+		
+		Student s1=new Student("김길동", "kim");
+
+		Student s2=new Student("이길동", "lee");
+
+		s1.pr(); s2.pr(); //모든 데이터 출력
+	}
+}

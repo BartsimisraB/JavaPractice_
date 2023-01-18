@@ -1,0 +1,44 @@
+/**
+ * 
+ */
+function checkform() {
+	if ((document.fr.name.innerHTML == "" || document.fr.name.length == 0)
+		|| (document.fr.pernum2.innerHTML == null || document.fr.pernum2.length == 0)
+		|| (document.fr.id.innerHTML == null || document.fr.id.length == 0)
+		|| (document.fr.pw.innerHTML == null || document.fr.pw.length == 0)
+		|| (document.fr.pwcheck.innerHTML == null || document.fr.pwcheck.length == 0)) {
+		
+		alert("*로 표시된 곳은 필수로 입력해야 합니다.");
+			
+	}
+
+	if (document.fr.id.length <= 4) {
+		alert("아이디는 4글자 이상 입력해 주세요");
+		document.fr.id.focus();
+	}
+	if (document.fr.addrnum.value.indexOf('-') == -1) {
+		alert("우편번호는 - 를 포함해 작성해 주세요");
+		document.fr.addrnum.focus();
+	}
+	if (document.fr.phone.value.indexOf('-') == -1) {
+		alert("전화번호는 - 를 포함해 작성해 주세요");
+		document.fr.addrnum.focus();
+	}
+	if (!document.fr.pw.value.equals(document.fr.pwcheck.value)) {
+		alert("비밀번호가 일치하지 않습니다.");
+		document.fr.pw.focus();
+	}
+}
+
+function checkemail() {
+	if (document.fr.selectEmail.value == '1') {
+		document.fr.email2.readOnly = false;
+		document.fr.email2.value = '';
+		document.fr.email2.focus();
+	}
+	else {
+		document.fr.email2.readOnly = true;
+		document.fr.email2.value = document.fr.selectEmail.value;
+	}
+}
+

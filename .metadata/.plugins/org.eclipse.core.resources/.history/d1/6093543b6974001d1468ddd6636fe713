@@ -1,0 +1,22 @@
+package Day_10_Java;
+
+public class Main5 {
+	public static void main(String[] args) throws Exception {
+
+//		for (int i = 0; i < 4; i++) {
+//			
+//			for (int k = i; k < 3; k++) {
+//				System.out.print(" ");
+//			}
+//
+//			for (int j = 0; j <= i*2; j++) {
+//				System.out.print(j);
+//			}
+//			System.out.println();
+//		}
+
+String eng[]={"student","book","future","note"};
+
+String kor[]={"학생","책","미래","노트"};
+	}
+}

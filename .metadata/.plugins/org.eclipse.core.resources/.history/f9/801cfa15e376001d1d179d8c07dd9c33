@@ -1,0 +1,6 @@
+package Scheduler_322;
+
+public interface Scheduler {
+	public void getNextcall();
+	
+}

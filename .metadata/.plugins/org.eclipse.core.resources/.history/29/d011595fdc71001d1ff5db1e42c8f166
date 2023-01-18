@@ -1,0 +1,20 @@
+package Day9_Java;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class Day9_Java2 {
+	public static void main(String[] args) throws IOException {
+		
+	FileReader fr = new FileReader("Test2.txt");
+	
+	int a = -1;
+	int r;
+	while((r=fr.read())!=a) {
+		System.out.println((char)r);
+	}
+	fr.close();
+	
+	}
+}

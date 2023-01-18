@@ -1,0 +1,50 @@
+package Second_Day;
+
+public class Second_Day_Java3 {
+
+	public static void main(String[] args) {
+		// 전위, 후위 연산자들이 단독으로 사용되는 경우는 1중감 이라는 뜻
+		// 단독으로 쓰이는 경우가 아니면 순서를 생각해서 코드짜기
+		int a, b = 4;
+		a = b++;
+		System.out.println(a); // 4 출력
+		System.out.println(b); // 5 출력
+
+		int c, d = 4;
+		c = ++d;
+		System.out.println(c); // 5 출력
+		System.out.println(d); // 5 출력
+
+//	int age = 30;
+//	double ki = 177.7;
+//	String name = "Jack";
+//	char grade = 'A';
+//
+//	System.out.println(age + " " + ki + " " + name + " " + grade);
+//
+//	System.out.printf()에서 사용되는 키워드
+//	정수 : %d
+//	실수 : %f, %lf
+//	문자열 : %s
+//	문자 : %c
+//	System.out.printf("%d %.2f %s %c", age, ki, name, grade);
+//	printf에서는 왼쪽의 키워드 부분에 문장 입력을 해야한다. 오른쪽 부분은 항상 변수 이름만 사용.
+
+		String name = "건용";
+		int age = 20;
+		double ki = 177.7;
+		char blood = 'O';
+
+		System.out.println(name + "의 나이는 " + age + "살이다. \n키는 " + ki + "cm이며 " + name + "의 혈액형은 " + blood + "형이다.");
+		System.out.printf("%s의 나이는 %d살 이며 \n키는 %.1fcm이고 %s의 혈액형은 %c형이다.\n", name, age, ki, name, blood);
+		
+		// 영어 100점, 국어 95점일 때 평균구하기
+		int eng = 100;
+		int kor = 95;
+		double avg =((double)eng+kor)/2;
+		System.out.println(avg);
+		System.out.printf("두 과목의 평균은 %.1f점이다.",avg);
+		System.out.println("두 과목의 평균은 "+avg+ "점 이다.");
+	}
+
+}

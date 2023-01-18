@@ -1,0 +1,34 @@
+package Day_10_Java;
+
+class Fruit {
+	String color;
+	int cnt;
+
+	Fruit(String a, int b) {
+		color = a;
+		cnt = b;
+	}
+
+	void show() {
+		System.out.println(color + " " + cnt);
+	}
+}
+
+class Apple extends Fruit {
+
+	Apple(String name, int cnt) {
+		super(name, cnt);
+	}
+}
+
+public class Day10_Java2_UpCasting3 {
+
+	public static void main(String[] args) {
+
+		Fruit f1 = new Apple("red", 10);
+		f1.show();
+		
+		Apple a =(Apple)f1;
+		a.show();
+	}
+}

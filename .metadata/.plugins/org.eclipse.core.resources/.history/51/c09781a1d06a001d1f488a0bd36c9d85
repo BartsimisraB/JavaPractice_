@@ -1,0 +1,16 @@
+package Second_Day;
+
+public class Second_Day_Java2 {
+
+	public static void main(String[] args) {
+		
+		int a = 0;
+		a+=3; // a = a + 3
+		
+		System.out.println(a);
+		System.out.println(a++);
+		
+		
+	}
+
+}

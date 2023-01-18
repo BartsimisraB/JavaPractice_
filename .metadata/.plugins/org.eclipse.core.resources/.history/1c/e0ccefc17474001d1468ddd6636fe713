@@ -1,0 +1,31 @@
+package Day_10_Java;
+abstract class Car{
+	 
+	String name; // field
+	
+	void run() {
+		System.out.println("차가 움직인다.");
+	}
+	abstract void stop();	//추상 메소드 ( 빈 껍데기 )
+	//추상클래스 안에는 일반적인 메소드, 추상 메소드 둘 다 가능
+	//추상메소드는 반드시 추상 클래스 안에 존재해야함.
+
+}
+class Cars extends Car{
+	Cars(){
+		name = "인피니티";
+	}
+	
+	void stop() {
+		System.out.println("차가 멈춘다.");	//오버라이딩 : 부모의 함수를 재정의
+	}
+}
+public class Day10_Java2_abstract2 {
+	
+	public static void main(String[] args) {
+
+		Cars c = new Cars();
+		c.run();
+		c.stop();
+	}
+}

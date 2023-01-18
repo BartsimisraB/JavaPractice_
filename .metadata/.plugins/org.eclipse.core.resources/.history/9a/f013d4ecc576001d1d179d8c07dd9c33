@@ -1,0 +1,7 @@
+package Array_208;
+
+public class EnhancedForLoop {
+	public static void main(String[] args) {
+		String [] strArray = {"Java", "Android"
+	}
+}

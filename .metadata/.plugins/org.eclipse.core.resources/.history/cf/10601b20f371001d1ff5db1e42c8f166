@@ -1,0 +1,35 @@
+package Day9_Java;
+
+class Book {
+	String name;
+	int num;
+
+	Book() {
+	}
+
+	Book(String name, int num) {
+		this.name = name;
+		this.num = num;
+	}
+
+	Book(String name) {
+		this.name = name;
+	}
+	void show() {
+		System.out.println("책 이름 : "+name+" "+num+"만원");
+	}
+}
+
+public class Excercise8 {
+	public static void main(String[] args) {
+
+		Book b1 = new Book("고양이", 30000);	//파라미터가 있는 생성자
+		Book b2 = new Book("총균쇠");	//파라미터가 있는 생성자
+		Book b3 = new Book();	//기본 생성자
+
+		b1.show();
+		b2.show();
+		b3.show();
+
+	}
+}

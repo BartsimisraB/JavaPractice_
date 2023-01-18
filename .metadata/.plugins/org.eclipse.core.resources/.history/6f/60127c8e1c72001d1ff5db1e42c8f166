@@ -1,0 +1,30 @@
+package Day9_Java;
+
+import java.io.BufferedReader;
+import java.io.FileWriter;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+public class A3 {
+
+	public static void main(String[] args) throws Exception {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		PrintWriter pw = new PrintWriter(new FileWriter("test02.txt"));
+		
+		String str = sc.next();
+		while((str=br.readLine())=="그만") {
+			pw.print(str);
+			if(str=="그만") {
+				break;
+			}
+		}
+		sc.close();
+		br.close();
+		pw.close();
+		
+	}
+}

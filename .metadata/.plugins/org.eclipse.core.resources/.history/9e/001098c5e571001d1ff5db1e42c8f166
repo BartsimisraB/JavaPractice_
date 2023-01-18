@@ -1,0 +1,28 @@
+package Day9_Java;
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.InputStreamReader;
+
+public class Day9_Java3 {
+
+	public static void main(String[] args)throws Exception {
+		
+		InputStreamReader in =new InputStreamReader(System.in);
+		// 콘솔에 직접 입력한 문자 스트림 형성
+		FileWriter fw = new FileWriter("Java2.txt");
+		// 파일과 연결된 출력 문자 스트림 형성
+		
+		int a ;
+		while((a=in.read())!=-1) {
+			fw.write(a);
+		}
+		
+		in.close();
+		fw.close();
+		
+		
+		
+		
+	}
+}

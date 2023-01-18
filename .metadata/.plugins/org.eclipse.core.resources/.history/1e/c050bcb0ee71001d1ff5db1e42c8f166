@@ -1,0 +1,42 @@
+package Day9_Java;
+
+class Student {
+	String name;
+	int age;
+
+	Student() {
+		name = "½ÂÁÖ";
+		age = 20;
+	}
+
+	Student(String pname, int page) {
+		name = pname;
+		age = page;
+	}
+
+	Student(String pname) {
+		name = pname;
+	}
+
+	void pr() {
+
+	}
+
+}
+
+public class Excercise6 {
+
+	public static void main(String[] args) {
+
+		Student s = new Student("Çö¼®", 29);
+
+		Student s2 = new Student("ÇÑÈñ");
+
+		Student s3 = new Student();
+
+		s.pr();
+		s2.pr();
+		s3.pr();
+
+	}
+}

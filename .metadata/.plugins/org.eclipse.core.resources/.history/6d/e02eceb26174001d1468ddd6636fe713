@@ -1,0 +1,27 @@
+package Day_10_Java;
+
+class Music {
+	String title;
+	String singer;
+
+	Music(String a, String b) {
+		title = a;
+		singer = b;
+	}
+
+	Music(String a) {
+		this(a, singer);
+	}
+
+}
+
+public class Main3 {
+	public static void main(String[] args) throws Exception {
+
+		Music m = new Music("On", "BTS");
+		System.out.println(m.title + " " + m.singer); // On , BTS 출력
+		Music m1 = new Music("Butter");
+		System.out.println(m1.title + " " + m1.singer); // Butter, 방탄 출력
+
+	}
+}

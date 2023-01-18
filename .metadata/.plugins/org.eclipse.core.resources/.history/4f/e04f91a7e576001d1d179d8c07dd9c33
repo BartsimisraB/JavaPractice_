@@ -1,0 +1,21 @@
+package Book;
+
+class Book {
+	int bookNumber;
+	String bookTitle;
+
+	Book(int bookNumber, String bookTitle) {
+		this.bookNumber = bookNumber;
+		this.bookTitle = bookTitle;
+	}
+}
+
+public class Page_4_354 {
+	public static void main(String[] args) {
+
+		Book book1 = new Book(200, "°³¹Ì");
+		
+		System.out.println(book1);
+		System.out.println(book1.toString());
+	}
+}

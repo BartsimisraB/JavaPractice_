@@ -1,0 +1,75 @@
+/**
+ * 	
+if (document.fr.name.value == "") {
+		alert("이름을 입력하세요");
+		document.fr.name.focus();
+	} else if (document.fr.id.value == "") {
+		alert("아이디를 입력하세요");
+	} else if (document.fr.pw.value == "") {
+		alert("비밀번호를 입력하세요.");
+	} else if (document.fr.pw.value != document.fr.pwcheck.value) {
+		alert("비밀번호가 일치하지 않습니다");
+	} else {
+		document.fr.submit();
+	}
+ */
+function checkform() {
+	if (document.fr.name.value == "") {
+		alert("이름을 입력하세요");
+		document.fr.name.focus();
+	} 
+	else if(document.fr.pernum1.value == "" || document.fr.pernum2.value == ""){
+		alert("주민번호를 전부 입력하세요");
+	}
+	else if (document.fr.id.value == "") {
+		alert("아이디를 입력하세요");
+	} else if (document.fr.pw.value == "") {
+		alert("비밀번호를 입력하세요.");
+	} else if (document.fr.pw.value != document.fr.pwcheck.value) {
+		alert("비밀번호가 일치하지 않습니다");
+	} 
+
+	if (document.fr.id.length <= 4) {
+		alert("아이디는 4글자 이상 입력해 주세요");
+		document.fr.id.focus();
+	}
+	else if (document.fr.addrnum.value.indexOf('-') == -1) {
+		alert("우편번호는 - 를 포함해 작성해 주세요");
+		document.fr.addrnum.focus();
+	}
+else if (document.fr.phone.value.indexOf('-') == -1) {
+		alert("핸드폰 번호는 - 를 포함해 작성해 주세요");
+		document.fr.phone.focus();
+	}
+	else {
+		document.fr.submit();
+	}
+/*
+	if ((document.fr.name.value != null || document.fr.name.innerText.length != 0)
+		&& (document.fr.pernum.value != null || document.fr.pernum.innerText.length != 0)
+		&& (document.fr.id.value != null || document.fr.id.innerText.length != 0)
+		&& (document.fr.pw.value != null || document.fr.pw.innerText.length != 0)
+		&& (document.fr.pwcheck.value != null || document.fr.pwcheck.innerText.length != 0)
+		&& (document.fr.email1.value != null || document.fr.email1.innerText.length != 0)
+		&& (document.fr.email2.value != null || document.fr.email2.innerText.length != 0)
+		&& (document.fr.addrnum.value != null || document.fr.addrnum.innerText.length != 0)
+		&& (document.fr.addr1.value != null || document.fr.addr1.innerText.length != 0)
+		&& (document.fr.addr2.value != null || document.fr.addr2.innerText.length != 0)
+		&& (document.fr.phone.value != null || document.fr.phone.length != 0)) {
+
+		document.fr.submit();
+	}*/
+}
+
+function checkemail() {
+	if (document.fr.selectEmail.value == '1') {
+		document.fr.email2.readOnly = false;
+		document.fr.email2.value = '';
+		document.fr.email2.focus();
+	}
+	else {
+		document.fr.email2.readOnly = true;
+		document.fr.email2.value = document.fr.selectEmail.value;
+	}
+}
+

@@ -1,0 +1,23 @@
+function isEmpty(value) {
+	if (value == null || value.length === 0 || value == "") {
+		return true;
+	}
+	return false;
+}
+
+function validate() {
+	var id = document.getElementsByName("id")[0];
+	var age = document.getElementsByName("age")[0];
+
+	if (isEmpty(id.value) || isEmpty(age.value)) {
+		alert("반드시 입력해야합니다.");
+		return false;
+	}
+
+	if (isNaN(age.value)) {
+		alert("숫자를 입력하세요.");
+		return false;
+	}
+
+	return true;
+}

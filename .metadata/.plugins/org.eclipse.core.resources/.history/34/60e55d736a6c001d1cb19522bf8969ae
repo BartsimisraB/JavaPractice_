@@ -1,0 +1,25 @@
+package Day4_Java;
+
+import java.util.Scanner;
+
+public class Day4_Java3 {
+//	1. 두 과목 점수를 입력하여 평균 출력하는 프로그램(평균은소수점 이하 첫째자리까지 출력)
+//
+//	출력 결과) 두 과목의점수 : 70 80
+//
+//	평균 : 75.0
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("첫번째 과목의 점수 입력");
+		int a = sc.nextInt();
+		System.out.println("두번째 과목의 점수 입력");
+		int b = sc.nextInt();
+		
+		System.out.printf("두 과목의 점수 : %d %d",a,b);
+		System.out.printf("평균 : %.1f",((double)a/b));
+	}
+
+
+
+}

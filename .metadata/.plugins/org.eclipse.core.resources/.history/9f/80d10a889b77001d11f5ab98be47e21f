@@ -1,0 +1,48 @@
+package Day14_Java;
+
+public class B4 {
+	public static void main(String[] args) {
+//		1~100안의 정수를입력받아 3,6,9 중 하나가 있는 경우 “짝”, 두 개 있는 경우 “짝짝”,
+//		하나도 없으면 “땡”을출력해라. 
+//		(정수값이 39라고 할 때, n/10=3, n%10=9 이 나온다. (/, % 연산자 활용))
+//		실행 결과) 입력:39 
+//		짝짝
+
+		int a = (int)(Math.random()*99)+1;
+		System.out.println("입력 : " + a);
+		int ten = a / 10;
+		int ten_mod = a % 10;
+		
+		if (a < 10) {
+			
+		}
+		else {
+			if(ten % 3 == 0 && ten_mod % 3 == 0) {
+				System.out.println("짝짝");
+			}
+			else if(ten % 3 == 0 ^ ten_mod % 3 == 0) {
+				
+			}
+			else if(ten % 3 != 0 || ten_mod % 3 != 0) {
+				System.out.println("땡");
+			}
+		}
+//		if (a > 10) {
+//			if (((a / 10) == 3 ^ (a / 10) == 6 ^ (a / 10) == 9) && ((a % 10) == 3 ^ (a % 10) == 6 ^ (a % 10) == 9)) {
+//				System.out.println("짝짝");
+//			}
+//			else if(((a / 10) == 3 ^ (a / 10) == 6 ^ (a / 10) == 9) ^ ((a % 10) == 3 ^ (a % 10) == 6 ^ (a % 10) == 9)) {
+//				System.out.println("짝");
+//			}
+//			else if (a  != 3 ^ a != 6 ^ a != 9) {
+//				System.out.println("땡");
+//			}
+//		} else {
+//			if (a == 3 ^ a == 6 ^ a == 9) {
+//				System.out.println("짝");
+//			} else if (a  != 3 ^ a != 6 ^ a != 9) {
+//				System.out.println("땡");
+//			}
+//		}
+	}
+}

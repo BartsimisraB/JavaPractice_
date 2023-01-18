@@ -1,0 +1,25 @@
+package Second_Day;
+
+public class Second_Day_Java2 {
+
+	public static void main(String[] args) {
+		
+		int a = 0;
+		a+=3; // a = a + 3
+		
+		System.out.println(a);	// 3출력
+		System.out.println(a++);	//3 출력
+		System.out.println(a);	//4출력
+		//a++ : 후위연산자 || ++a : 전위 연산자
+		
+		int b = 1;
+		b++;
+		System.out.println(b);	// 2 출력
+		
+		int c = 1;
+		System.out.println(c);	// 2 출력
+		++c;
+		System.out.println(c);
+	}
+
+}

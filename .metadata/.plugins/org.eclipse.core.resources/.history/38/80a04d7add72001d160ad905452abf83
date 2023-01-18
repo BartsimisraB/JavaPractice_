@@ -1,0 +1,39 @@
+package Day7_Java;
+
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class Day7_Java_Exercise1 {
+	public static void main(String[] args) {
+
+//	1. 정수 10개를 입력받아 배열에 저장한 후, 배열을 검색하여 4의 배수만 골라 출력하는 프로그램
+//
+//		Scanner sc = new Scanner(System.in);
+//		int arr[] = new int[10];
+//
+//		for (int i = 0; i < arr.length; i++) {
+//			arr[i] = sc.nextInt();
+//		}
+//		
+//		for (int a : arr) {
+//			if (a % 4 == 0) {
+//				System.out.println(a);
+//			} else {
+//				continue;
+//			}
+//		}
+		
+		Scanner sc = new Scanner(System.in);
+		int nums[] = new int[10];
+		
+		for (int num : nums) {
+			if(num % 4 == 0) System.out.println(num);
+		}
+//	2. 정수 a=50, b=150으로 초기화해서 a가 b보다 크면 a와 b의 곱, 아니면 a를 b로 나눴을 때의
+//	나머지 출력(삼항 조건 연산자 활용)
+
+		int a = 50, b = 150;
+		System.out.println(a > b ? a * b : a % b);
+	}
+
+}

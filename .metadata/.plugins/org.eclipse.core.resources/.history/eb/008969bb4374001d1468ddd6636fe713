@@ -1,0 +1,23 @@
+package Day_10_Java;
+class Song{
+	
+	String singer;
+	String song;
+	
+	Song(String singer, String song){
+		this.singer = singer;
+		this.song = song;
+	}
+}
+
+
+
+public class Day10_Java2_Reperance2 {	//ppt °´Ã¼¹è¿­
+	
+	public static void main(String[] args) {
+		
+		
+		
+		
+	}
+}

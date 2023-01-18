@@ -1,0 +1,68 @@
+package Day_10_Java;
+
+import java.util.Scanner;
+
+public class Main5 {
+	private static int get(int[][] a) {
+		int high = 0;
+		int temp = 0;
+		for (int i = 0; i < a.length; i++) {
+			for (int j = 0; j < a.length - 1; j++) {
+				if (a[i][j] > a[i][j + 1]) {
+					temp = a[i][j];
+					a[i][j] = a[i][j + 1];
+					a[i][j + 1] = temp;
+				}
+			}
+		}
+		for (int i = 0; i < a.length; i++) {
+			high = a[a.length - 1][a[i].length - 1];
+		}
+		return high;
+	}
+
+	public static void main(String[] args) throws Exception {
+
+//		for (int i = 0; i < 4; i++) {
+//			
+//			for (int k = i; k < 3; k++) {
+//				System.out.print(" ");
+//			}
+//
+//			for (int j = 0; j <= i*2; j++) {
+//				System.out.print(j);
+//			}
+//			System.out.println();
+//		}
+		int[][] grade = { { 55, 60, 65 }, { 85, 90, 95 } };
+
+		int high;
+
+		high = get(grade);
+
+		System.out.println("가장 높은 점수는 " + high + "점 입니다.");
+
+		Scanner sc = new Scanner(System.in);
+		String eng[] = { "student", "book", "future", "note" };
+
+		String kor[] = { "학생", "책", "미래", "노트" };
+
+		while (true) {
+			System.out.println("영어 단어 입력 : ");
+			String str_eng = sc.next();
+			System.out.println("한글 단어 입력 : ");
+			String str_kr = sc.next();
+
+			for (int i = 0; i < 4; i++) {
+
+				if (str_eng.equals(eng[i]) && str_kr.equals(kor[i]))
+					System.out.println(eng[i]+ " " +kor[i]);
+			}
+			if (str_eng.equals("stop"))
+				break;
+
+		}
+
+	}
+
+}

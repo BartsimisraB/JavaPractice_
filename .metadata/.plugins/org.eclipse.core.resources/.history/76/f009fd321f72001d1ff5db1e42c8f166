@@ -1,0 +1,22 @@
+package Day9_Java;
+
+class Rectangle {
+	int width, height;
+
+	int area() {
+		int area = width * height;
+		return area;
+	}
+
+}
+
+public class A5 {
+
+	public static void main(String[] args) {
+
+		Rectangle rec = new Rectangle();
+		rec.width = 5;
+		rec.height = 6;
+		System.out.println("사각형 면적" + rec.area());
+	}
+}

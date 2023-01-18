@@ -1,0 +1,33 @@
+package Second_Day;
+
+public class Second_Day_Java3 {
+
+	public static void main(String[] args) {
+		// 전위, 후위 연산자들이 단독으로 사용되는 경우는 1중감 이라는 뜻
+		// 단독으로 쓰이는 경우가 아니면 순서를 생각해서 코드짜기
+		int a, b = 4;
+		a = b++;
+		System.out.println(a); // 4 출력
+		System.out.println(b); // 5 출력
+
+		int c, d = 4;
+		c = ++d;
+		System.out.println(c); // 5 출력
+		System.out.println(d); // 5 출력
+
+		int age = 30;
+		double ki = 177.7;
+		String name = "Jack";
+		char grade = 'A';
+
+		System.out.println(age + " " + ki + " " + name + " " + grade);
+
+//		System.out.printf()에서 사용되는 키워드
+//		정수 : %d
+//		실수 : %f, %lf
+//		문자열 : %s
+//		문자 : %c
+		System.out.printf("%d %.1f %s %c", age, ki, name, grade);
+	}
+
+}

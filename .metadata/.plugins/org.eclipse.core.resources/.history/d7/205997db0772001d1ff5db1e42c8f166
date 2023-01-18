@@ -1,0 +1,17 @@
+package Day9_Java;
+class People{
+	String name;
+	
+	void name(String a) {
+		System.out.println("ÀÌ¸§ : "+a);
+	}
+	
+}
+public class Excercise910 {
+
+	public static void main(String[] args) {
+		
+		People p =new People("Çü¹Î");
+		p.name()	//Çü¹Î Ãâ·Â
+	}
+}

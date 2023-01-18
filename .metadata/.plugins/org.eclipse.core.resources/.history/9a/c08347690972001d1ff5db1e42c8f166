@@ -1,0 +1,42 @@
+package Day9_Java;
+
+import javax.management.remote.SubjectDelegationPermission;
+
+class People {
+	private String name;
+
+	People(String a) {
+		name = a;
+	}
+
+	void name() {
+		System.out.println(name);
+	}
+}
+
+class Student extends People {
+
+	private String major, school;
+	super(a);
+	
+	Student(String a, String major , String school){
+		
+		this.major =major;
+		this.school=school;
+	}
+	void show() {
+		System.out.println(a + " " + major + " " + school);
+	}
+}
+
+public class Excercise910 {
+
+	public static void main(String[] args) {
+
+		People p = new People("Çü¹Î");
+		p.name(); // Çü¹Î Ãâ·Â
+
+		Student s = new Student("Çü¹Î", "ÄÄÇ»ÅÍ", "ÄÄ°ø");
+		s.show();
+	}
+}

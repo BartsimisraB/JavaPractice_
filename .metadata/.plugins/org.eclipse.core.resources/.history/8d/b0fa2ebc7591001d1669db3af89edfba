@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+	request.setCharacterEncoding("UTF-8");
+	String id = request.getParameter("id");
+	String pw = request.getParameter("pw");
+
+	session.setAttribute("ii", id);
+	session.setMaxInactiveInterval(60);
+%>
+<form action = "Food3.jsp">
+	<label for = "food">좋아하는 음식은?</label>
+	<input type = "radio" name = "food">피자
+	<input type = "radio" name = "food">파스타
+	<input type = "radio" name = "food">탕수육
+	
+	<input type = "submit" value = "결과"	>
+</form>
+</body>
+</html>

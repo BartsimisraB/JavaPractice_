@@ -1,0 +1,92 @@
+package gui;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import javax.swing.border.*;
+import javax.swing.table.*;
+
+// 컬럼에 버튼을 추가하기 위해 만든 클래스 
+public class ButtonColumn extends AbstractCellEditor
+		implements TableCellRenderer, TableCellEditor, ActionListener, MouseListener {
+	private JTable table;
+	private Action action;
+	private int mnemonic;
+
+	private JButton renderButton;
+	private JButton editButton;
+	private Object editorValue;
+	private boolean isButtonColumnEditor;
+	
+	//테이블의 컬럼에 어떤 액션을 할 것인지 설정
+	ButtonColumn(JTable table, Action action, int column){
+		this.table = table;
+		this.action = action;
+		
+		renderButton = new JButton();
+		editButton = new JButton();
+		editButton.setFocusPainted( false );
+		editButton.addActionListener( this );
+		originalBorder = editButton.getBorder();
+		setFocusBorder( new LineBorder(Color.BLUE) );
+
+		TableColumnModel columnModel = table.getColumnModel();
+		columnModel.getColumn(column).setCellRenderer( this );
+		columnModel.getColumn(column).setCellEditor( this );
+		table.addMouseListener( this );
+	}
+	@Override
+	public Object getCellEditorValue() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void mouseClicked(MouseEvent e) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void mousePressed(MouseEvent e) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void mouseReleased(MouseEvent e) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void mouseEntered(MouseEvent e) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void mouseExited(MouseEvent e) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Component getTableCellEditorComponent(JTable table, Object value, boolean isSelected, int row, int column) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus,
+			int row, int column) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

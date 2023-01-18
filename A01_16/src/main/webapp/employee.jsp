@@ -1,0 +1,42 @@
+<%@page import="bean.EmployeeBean"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="bean.EmployeeDAO"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<%
+	request.setCharacterEncoding("utf-8");
+	EmployeeDAO edao = new EmployeeDAO();
+	ArrayList<EmployeeBean> list = edao.allSelect();
+	%>
+	<center>
+		<table width="400" border="1">
+			<tr height="50">
+				<td widtd="150" align="center">이름</td>
+				<td widtd="150" align="center">주소</td>
+				<td widtd="150" align="center">생년월일</td>
+			</tr>
+
+			<%
+			for (int i = 0; i < list.size(); i++) {
+				EmployeeBean ebean = list.get(i);
+			%>
+			<tr>
+				<td width="150"><%=ebean.getName() %></td>
+				<td width="150"><%=ebean.getAddress()%></td>
+				<td width="150"><%=ebean.getSsn() %></td>
+			</tr>
+<% 
+			}
+%>
+		</table>
+	</center>
+
+</body>
+</html>

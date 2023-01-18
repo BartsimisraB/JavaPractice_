@@ -1,0 +1,7 @@
+package Book;
+
+public class Page_4_506 extends Exception{
+	public Page_4_506(String message) {
+		super(message);
+	}
+}

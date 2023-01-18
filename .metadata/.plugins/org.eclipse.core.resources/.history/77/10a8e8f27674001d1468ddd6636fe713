@@ -1,0 +1,44 @@
+package Day_10_Java;
+
+import java.util.Scanner;
+
+class Num extends Exception{	//api에 설정되어있는 클래스를 상속받기
+	Num(){	//기본 생성자
+		super("잘못된 값!!");	//Exception(부모) 생성자 호출
+	}	
+	//Exception(String message)
+	//Constructs a new exception with the specified detail message.
+}
+
+public class Day10_Java2_abstract3 {
+	
+	static int in() throws Num {	//throws IOException
+		Scanner sc = new Scanner(System.in);
+		int n =sc.nextInt();
+		
+		if(n < 0) {	//음수가 아닐 때 n 리턴
+			Num num = new Num();	//
+			throw num;	
+		}
+		return n;
+	}
+		
+	
+	public static void main(String[] args) {
+
+		
+		System.out.println("양수 입력");
+		
+		try {
+			int n = in();	//정수 입력하는 함수
+			System.out.println(n);
+			
+			
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			
+		} 
+		
+		
+	}
+}

@@ -1,0 +1,17 @@
+package Exercise;
+
+public class Excercise1 {
+	public static void main(String[] args) {
+		 byte b = 127;
+		 int i = 100;
+		 System.out.println((byte)(b+i));
+	}
+// 정수 타입 변수가 산술 연산식에서 피연산자로 사용되면 int 타입보다 작은 byte, 
+// 타입의 변수는 int 타입으로 자동 타입 변환 되어 연산을 수행한다.
+// 따라서 b + i 는 227이며 이를 byte 타입으로 변환 하게 되면
+// byte의 범위 -128부터 -1까지 음수 128개, 0부터 127까지 양수 128개 총
+// 256가지이다.
+// byte는 범위를 벗어나면 음수로 인식 되기 때문에
+// 128 부터 -128이 되며, (127 + 100) >> (-128 + 99) 가 되므로
+// 최종적으로 -29가 나오게 된다.
+}

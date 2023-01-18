@@ -1,0 +1,36 @@
+package Day9_Java;
+
+class Person {
+
+	String name;
+	float height;
+	float weight;
+	//필드 ( 멤버변수
+
+	public Person() {	// 1
+	} // 생성자가 없는 클래스는 자바 컴파일러에서 기본 생성자를 만들어줌
+
+	public Person(String pname) {	// 2
+		name = pname;
+	}
+
+	public Person(String pname, float pheight, float pweight) {	// 3
+		name = pname;
+		height = pheight;
+		weight = pweight;
+	}
+}
+
+public class Excercise5 { // public class는 하나의 파일에 하나만 존재가능
+	public static void main(String[] args) {
+
+		Person personKim = new Person(); // 1번 생성자 호출
+		personKim.name = "김유신";
+		personKim.weight = 85.5F;
+		personKim.height = 180.0F;
+		// personKim 객체
+		
+		Person personLee = new Person("이순신",175,75);	// 3번 생성자 호출
+		// personLee의 객체
+	}
+}

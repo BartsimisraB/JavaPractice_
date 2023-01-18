@@ -1,0 +1,25 @@
+<%@page import="java.net.URLEncoder"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+	String id = "pink";
+	String pw = "1234";
+	String name = "건용";
+	
+	request.setCharacterEncoding("UTF-8");
+	
+	if(id.equals(request.getParameter("id")) && pw.equals(request.getParameter("pwd"))){
+		response.sendRedirect("m.jsp?name=" + URLEncoder.encode(name,"UTF-8"));
+	}
+	
+
+%>
+</body>
+</html>

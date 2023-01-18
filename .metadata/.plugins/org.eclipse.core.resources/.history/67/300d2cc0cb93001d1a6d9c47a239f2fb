@@ -1,0 +1,26 @@
+package gui;
+
+import java.awt.Component;
+
+import javax.swing.JButton;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableCellRenderer;
+
+// JTable에 사용자정의로 작성된 TableCellRenderer연결하기
+// TableCellRenderer 작성 작업이 완료되면 JTable이 인식하는 기본 TableCellRenderer대신에 우리가 작성한 TableCellRenderer를 셋팅해주면 됩니다.
+public class ProductTableCellRenderer extends DefaultTableCellRenderer {
+	// JTable table : 현재 작업 중인 JTable
+	//Object value : 현재 작업 중인 JTable의 셀객체
+	//int row : 현재 작업 중인 row번호
+	//int column : 현재 작업 중인 column번호
+	@Override
+	public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus,
+			int row, int column) {
+		Component comp = null;
+		if (column == 6) {
+			comp = new JButton();
+
+		}
+		return comp;
+	}
+}

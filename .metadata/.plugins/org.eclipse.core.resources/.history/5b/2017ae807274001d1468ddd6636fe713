@@ -1,0 +1,22 @@
+package Day_10_Java;
+
+class Number{
+	int n;
+	static void show(int n) {	//
+		System.out.println(n);
+	}						//함수 명이 같을 때
+	void show(double n) {	//오버로딩 : 매개변수 타입 , 매개변수 개수가 다르면 상관없다.
+		System.out.println(n);
+	}
+}
+
+public class Day10_Java2_abstract {
+	
+	public static void main(String[] args) {
+
+		
+		Number n = new Number();
+		n.show(3.14);
+		Number.show(20); //static 메소드는 객체 생성없이 클래스로 호출 가능
+	}
+}
