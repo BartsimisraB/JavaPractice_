@@ -155,10 +155,8 @@
       
       
       
-      <Context docBase="C:\Users\11027\eclipse-workspace1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\11027\eclipse-workspace1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\A01_16_3" path="/A01_16_3" reloadable="true" source="org.eclipse.jst.jee.server:A01_16_3">
-      <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" name="jdbc/pool" password="qkrdlstj369!" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521/xe" username="system"/>
-      </Context>
-      </Host>
+      
+      <Context docBase="C:\Users\11027\eclipse-workspace1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\11027\eclipse-workspace1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\A01_18" path="/A01_18" reloadable="true" source="org.eclipse.jst.jee.server:A01_18"/></Host>
     </Engine>
   </Service>
 </Server>
