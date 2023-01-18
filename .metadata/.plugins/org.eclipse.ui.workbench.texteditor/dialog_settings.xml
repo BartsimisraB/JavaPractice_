@@ -6,6 +6,7 @@
 		<item key="wholeword" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="회원"/>
 			<item value="email"/>
 			<item value="grid"/>
 			<item value="text"/>
@@ -13,7 +14,6 @@
 			<item value="prod"/>
 			<item value="mypageBtn"/>
 			<item value="changelogoutIcon"/>
-			<item value="icon"/>
 		</list>
 		<list key="replacehistory">
 		</list>
