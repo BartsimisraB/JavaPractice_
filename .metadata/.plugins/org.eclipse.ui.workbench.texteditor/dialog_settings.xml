@@ -6,14 +6,14 @@
 		<item key="wholeword" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="serch"/>
+			<item value="select"/>
+			<item value="count"/>
 			<item value="회원"/>
 			<item value="email"/>
 			<item value="grid"/>
 			<item value="text"/>
 			<item value="input"/>
-			<item value="prod"/>
-			<item value="mypageBtn"/>
-			<item value="changelogoutIcon"/>
 		</list>
 		<list key="replacehistory">
 		</list>

@@ -32,6 +32,9 @@
 		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
 		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\11027\Desktop\01_20 코드작성.zip"/>
+			<item value="C:\Users\11027\Desktop\123.zip"/>
+			<item value="C:\Users\11027\Desktop\1월18일수업내용.zip"/>
 			<item value="C:\Users\11027\Desktop\ncs제출_김건용_수정.zip"/>
 			<item value="C:\Users\11027\Desktop\하나둘.zip"/>
 			<item value="C:\Users\11027\OneDrive\문서\ncs_제출_김건용.zip"/>

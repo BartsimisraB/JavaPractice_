@@ -1,7 +1,0 @@
-package Bean;
-
-public class ItemBean {
-String name;
-int price;
-String desc1;
-}

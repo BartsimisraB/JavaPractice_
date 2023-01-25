@@ -156,9 +156,11 @@
       
       
       
-      <Context docBase="A01_18" path="/A01_18" reloadable="true" source="org.eclipse.jst.jee.server:A01_18"/><Context docBase="A0116_3" path="/A0116_2" reloadable="true" source="org.eclipse.jst.jee.server:A0116_3">
-      <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" name="jdbc/pool" password="qkrdlstj369!" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521/xe" username="system"/>
+          
+      <Context docBase="Login" path="/Login" reloadable="true" source="org.eclipse.jst.jee.server:Login">
+      <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" name="jdbc/pool" password="9149r2214" type="javax.sql.DataSource" url="jdbc:oracle:thin:@192.168.13.23:1521:xe" username="system"/>
       </Context>
+      
       </Host>
     </Engine>
   </Service>

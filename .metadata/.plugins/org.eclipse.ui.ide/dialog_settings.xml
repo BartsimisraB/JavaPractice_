@@ -17,11 +17,15 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="true"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\11027\Desktop\Member"/>
+			<item value="C:\Users\11027\Downloads\A0116_3"/>
+			<item value="C:\Users\11027\Desktop\Bb"/>
 			<item value="C:\Users\11027\Desktop\A0116_3"/>
 			<item value="C:\Users\11027\Desktop\A0113_3"/>
 			<item value="C:\Users\11027\OneDrive\바탕 화면\Baekjun_exercises"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\11027\eclipse-workspace1\Login\src\main\webapp\mainForm.jsp"/>
 			<item value=""/>
 		</list>
 	</section>

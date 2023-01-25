@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+div{
+	margin: 10%;
+}
+form {
+	margin: 0 px auto;
+}
+
+table {
+	display:inline-block;
+	border: 1px solid tomato;
+
+}
